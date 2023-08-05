@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: "inter", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+
+main.cards{
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #D1D8BD;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-width: 256px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card.icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+ 
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #D1D8BD;
+    margin-top: 10px;
+
+}
+
+main.cards section.card.contact button{
+  background:#283106
+}
+
+main.cards section.card.contact{
+    box-shadow: 20px 20px 50px -30px #283106;
+}
+
+@media screen and (max-width: 720px){
+     main.cards {
+        flex-direction: column;
+     }
+
+     main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+
+     }
+
+     main.cards section.card:last-child{
+        margin-bottom: 0;
+     }
+}
+    
+
+.container-fluid{
+    background-color: #D1D8BD;
+}
+
+.btn{
+    background-color: #DFE0DC;
+}
+
+.nav-link{
+    color:#283106;
+
+}
+
+hr{
+    color:#283106;
+    
+}
+
+h2{
+    color: #283106;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+
+
+footer{
+    width: 100%;
+    color: #283106;
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+#footer_container{
+    background-color: #D1D8BD;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer_link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer_link:hover{
+opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992 ,#ff9807 );
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#whatsaap{
+    background-color: #25d366;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer_link{
+color: #283106;
+transition: all 0.4s;
+}
+
+.footer-list .footer_link:hover{
+    color: #D1D8BD;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color:#ffff;
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #283106;
+    border: none;
+    color: #D1D8BD;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+#input_group button{
+    opacity: 0.8;
+}
+
+#footer_copyrigth{
+    display: flex;
+    justify-content: center;
+    background-color: #D1D8BD;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px){
+    #footer_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #footer_container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
